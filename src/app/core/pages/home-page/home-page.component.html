@@ -1,0 +1,6 @@
+<h1>Guards-test</h1>
+<button (click)="navigate()" >go to info-page!</button>
+<h3 *ngIf="failureMessageFlag" >Нужно нажать на кнопку 'впустить'</h3>
+<h3 *ngIf="allowedMessageFlag" >Редиректим на info-page =)</h3>
+<h3 *ngIf="!noClickOnEnterButton" >Вход разблокирован!</h3>
+<button (click)="changeGuardFlag()" >впустить</button>

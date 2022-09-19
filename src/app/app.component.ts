@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {UserData} from "./interfaces/user-data";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'pr';
+
+public userData: UserData = {
+  name: 'a',
+  surname: 's',
+  isMarried: false,
+  age: 2,
+  wifeName: 'dddd'
+}
+
+
 }
